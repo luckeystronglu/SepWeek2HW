@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@mipmap/new_search" />
+
+    <RadioGroup
+        android:id="@+id/tab_rg"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@+id/search"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RadioButton
+            android:id="@+id/handpick"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/listview_img"
+            android:button="@null"
+            android:gravity="center"
+            android:text="精选" />
+
+        <RadioButton
+            android:id="@+id/forum"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/listview_img"
+            android:layout_toRightOf="@+id/handpick"
+            android:button="@null"
+            android:gravity="center"
+            android:text="论坛"
+
+            />
+    </RadioGroup>
+
+</RelativeLayout>
